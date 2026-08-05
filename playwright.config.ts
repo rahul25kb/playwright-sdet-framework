@@ -53,7 +53,7 @@ export default defineConfig({
 
     {
     name: 'api',
-    testMatch: /.*api.*\.spec\.ts/,
+    testMatch: /^(?!.*apiWithUITests).*api.*\.spec\.ts/,   // matches "api" but excludes apiWithUITests specifically
     },
 
     /* Test against mobile viewports. */
