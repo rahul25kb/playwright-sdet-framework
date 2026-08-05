@@ -14,5 +14,7 @@ test ('API-fatched product name matches what UI displays', async({page, request,
  await homePage.clickOnProducts();
  await expect (page.getByText(firstProducName).first()).toBeVisible();
 
+ console.log(firstProducName);
+
 })
 
